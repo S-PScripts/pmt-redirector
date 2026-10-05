@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PMT PDF Redirector",
+  "version": "1.0",
+  "description": "Redirects Physics & Maths Tutor PDF pages directly to the file URL.",
+  "permissions": ["webRequest", "webRequestBlocking", "declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": [
+    "*://www.physicsandmathstutor.com/pdf-pages/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
